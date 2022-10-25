@@ -57,17 +57,27 @@ function level5Solution() {
 
 function level6Solution() {
   // USE BINARY IF STATEMENT
-  outputEl.innerHTML = "----";
+  if (row <= 5 && row >= 2) {
+  outputEl.innerHTML = "Sand";
+  } else { 
+  outputEl.innerHTML = "Water";
+  }
 }
-
 function level7Solution() {
   // USE BINARY IF STATEMENT
-  outputEl.innerHTML = "----";
+  if (row === 4 && column === 7) {
+  outputEl.innerHTML = "Water";
+  } else {
+  outputEl.innerHTML = "Sand";
+  }
 }
-
 function level8Solution() {
   // USE BINARY IF STATEMENT
-  outputEl.innerHTML = "----";
+  if (row === 5 && column <= 2) {
+  outputEl.innerHTML = "Tree";
+  } else {
+  outputEl.innerHTML = "Sand";
+  }
 }
 
 function level9Solution() {
