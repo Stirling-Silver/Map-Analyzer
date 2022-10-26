@@ -91,7 +91,15 @@ function level9Solution() {
 
 function level10Solution() {
   // USE CHAINED IF STATEMENT
-  outputEl.innerHTML = "----";
+  if (row >= 0 && column <= 1) {
+    outputEl.innerHTML = "Hills";
+  } else if (row >= 0 && column >= 2 && column < 4) {
+    outputEl.innerHTML = "Tree"; 
+  } else if (row >= 0 && column > 3 && column < 8) {
+    outputEl.innerHTML = "Sand";
+  } else {
+  outputEl.innerHTML = "Water";
+  }
 }
 
 function level11Solution() {
